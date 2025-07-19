@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Banana Illukit Studio</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/global.css' %}">
+
+    <style>
+        .project-card {
+            background-color: var(--dark2);
+            padding: 1.5rem;
+            border-radius: var(--border-radius);
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            transition: var(--transition);
+        }
+
+        .project-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .project-icon {
+            width: 64px;
+            height: 64px;
+            border-radius: var(--border-radius);
+            flex-shrink: 0;
+        }
+
+        .project-details {
+            flex: 1;
+        }
+
+        .project-details h3 {
+            margin-top: 0;
+            margin-bottom: 0.25rem;
+            color: var(--pink);
+        }
+
+        .project-details p {
+            margin: 0;
+            color: var(--text-color);
+            align-items: flex-start;
+        }
+
+        .project-link {
+            margin-top: 0.75rem;
+            display: inline-block;
+            font-weight: 700;
+            color: var(--pink);
+            text-decoration: underline;
+        }
+
+        .project-section {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .project-details {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container text-center">
+
+        <!-- 🔥 Banner Logo -->
+        <div class="about-img-wrapper">
+            <img src="https://lh3.googleusercontent.com/d/1Q1sdKe0AWnMwzyDc80kKJYbEVwcb7EV6" alt="Banana Illukit Logo"
+                class="about-img">
+        </div>
+
+        <!-- 👋 Intro -->
+        <div class="about-note">
+            <p style="font-size: 1.25rem;">
+                I'm a solo developer and music student focused on building minimal and useful apps for creatives.
+                I combine code with musical intuition to build tools that matter.
+            </p>
+        </div>
+
+        <!-- 🚀 Project Showcase -->
+        <section class="project-section">
+            <a href="https://repertoiretracker.pythonanywhere.com" target="_blank" class="project-card-link">
+                <div class="project-card">
+                    <img src="https://lh3.googleusercontent.com/d/13SiAGw-j56GB_P66fLClc2pLRqAZpeKy"
+                        alt="Repertoire Tracker Icon" class="project-icon">
+                    <div class="project-details">
+                        <h3 style="align-self: left;">Repertoire Tracker</h3>
+                        <p>A mobile app that helps musicians manage their pieces with precision. Instead of rating
+                            entire pieces, you break them into sections using bar ranges and track progress per section.
+                            This way, your overall piece progress reflects your real weak spots — making practice more
+                            focused and effective.</p>
+                    </div>
+                </div>
+            </a>
+
+        </section>
+
+    </div>
+</body>
+
+</html>
